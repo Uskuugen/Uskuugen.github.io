@@ -1,13 +1,13 @@
 name,code,gold,silver,copper
-Antigua and Barbuda,ATG,1180,959,841
-Algeria,DZA,473,376,355
-Azerbaijan,AZE,323,329,354
-Albania,ALB,262,291,327
+Antigua and Barbuda,ATG,10,959,841
+Algeria,DZA,1,376,355
+Azerbaijan,AZE,50,329,354
+Albania,ALB,300,291,327
 Armenia,ARM,,,
 Angola,AGO,,,
 American Samoa,ASM,,,
 Argentina,ARG,,,
-Australia,AUS,213123,3123123,12312
+Australia,AUS,1000,3123123,12312
 Bahrain,BHR,,,
 Barbados,BRB,,,
 Bermuda,BMU,,,
@@ -19,7 +19,7 @@ Bolivia,BOL,,,
 Burma,MMR,,,
 Benin,BEN,,,
 Solomon Islands,SLB,,,
-Brazil,BRA,,,
+Brazil,BRA,600,,
 Bulgaria,BGR,,,
 Brunei Darussalam,BRN,,,
 Canada,CAN,,,
