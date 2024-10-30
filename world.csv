@@ -1,136 +1,136 @@
-name,gold,silver,copper,medals
-Afghanistan,1180,959,841,2
-Algeria,473,376,355,17
-Argentina,323,329,354,77
-Armenia,262,291,327,18
-Australia,,,,562
-Austria,,,,326
-Azerbaijan,,,,49
-Bahamas,,,,16
-Bahrain,1,1,1,4
-Barbados,,,,1
-Belarus,,,,103
-Belgium,,,,161
-Bermuda,,,,2
-Botswana,,,,2
-Brazil,,,,150
-Bulgaria,,,,230
-Burkina Faso,,,,1
-Burundi,,,,2
-Cameroon,,,,6
-Canada,,,,525
-Chile,,,,13
-China,,,,696
-Colombia,,,,34
-Costa Rica,,,,4
-Croatia,,,,52
-Cuba,,,,241
-Cyprus,,,,1
-Czech Republic,,,,98
-Denmark,,,,206
-Djibouti,,,,1
-Dominican Republic,,,,12
-Ecuador,,,,5
-Egypt,,,,38
-Eritrea,,,,1
-Estonia,,,,43
-Ethiopia,,,,58
-Fiji,,,,3
-Finland,,,,472
-France,,,,874
-Gabon,,,,1
-Georgia,,,,40
-Germany,,,,892
-Ghana,,,,5
-Greece,,,,121
-Grenada,,,,3
-Guatemala,,,,1
-Guyana,,,,1
-Haiti,,,,2
-Hong Kong,,,,9
-Hungary,,,,518
-Iceland,,,,4
-India,,,,35
-Indonesia,,,,37
-Iran,,,,76
-Iraq,,,,1
-Ireland,,,,35
-Israel,,,,13
-Italy,,,,742
-Ivory Coast,,,,4
-Jamaica,,,,87
-Japan,,,,555
-Jordan,,,,3
-Kazakhstan,,,,80
-Kenya,,,,113
-Kuwait,,,,3
-Kyrgyzstan,,,,7
-Latvia,,,,30
-Lebanon,,,,4
-Liechtenstein,,,,10
-Lithuania,,,,26
-Luxembourg,,,,4
-Malaysia,,,,13
-Mauritius,,,,1
-Mexico,,,,73
-Moldova,,,,6
-Mongolia,,,,30
-Montenegro,,,,1
-Morocco,,,,24
-Mozambique,,,,2
-Namibia,,,,5
-Netherlands,,,,451
-New Zealand,,,,140
-Niger,,,,2
-Nigeria,,,,27
-North Korea,,,,56
-North Macedonia,,,,2
-Norway,,,,528
-Pakistan,,,,10
-Panama,,,,3
-Paraguay,,,,1
-Peru,,,,4
-Philippines,,,,14
-Poland,,,,320
-Portugal,,,,28
-Puerto Rico,,,,10
-Qatar,,,,8
-Romania,,,,309
-Russia,,,,547
-Samoa,,,,1
-San Marino,,,,3
-Saudi Arabia,,,,4
-Senegal,,,,1
-Serbia,,,,24
-Singapore,,,,5
-Slovakia,,,,40
-Slovenia,,,,45
-South Africa,,,,89
-South Korea,,,,357
-Spain,,,,171
-Sri Lanka,,,,2
-Sudan,,,,1
-Suriname,,,,2
-Sweden,,,,661
-Switzerland,,,,358
-Syria,,,,4
-Tajikistan,,,,4
-Tanzania,,,,2
-Thailand,,,,35
-Togo,,,,1
-Tonga,,,,1
-Trinidad and Tobago,,,,19
-Tunisia,,,,15
-Turkey,,,,104
-Turkmenistan,,,,1
-Uganda,,,,11
-Ukraine,,,,147
-United Arab Emirates,,,,2
-United Kingdom,,,,948
-United States,,,,2980
-Uruguay,,,,10
-Uzbekistan,,,,37
-Venezuela,,,,19
-Vietnam,,,,5
-Zambia,,,,2
-Zimbabwe,,,,8
+name,code,gold,silver,copper,medals
+Afghanistan,AFG,1180,959,841,2
+Algeria,ALG,473,376,355,17
+Argentina,DZA,323,329,354,77
+Armenia,ARM,262,291,327,18
+Australia,AUS,,,,562
+Austria,AUT,,,,326
+Azerbaijan,AZE,,,,49
+Bahamas,BHS,,,,16
+Bahrain,BHR,1,1,1,4
+Barbados,BRB,,,,1
+Belarus,BLR,,,,103
+Belgium,BEL,,,,161
+Bermuda,BMU,,,,2
+Botswana,BWA,,,,2
+Brazil,BRA,,,,150
+Bulgaria,BGR,,,,230
+Burkina Faso,BFA,,,,1
+Burundi,BDI,,,,2
+Cameroon,CMR,,,,6
+Canada,CAN,,,,525
+Chile,CHL,,,,13
+China,CHN,,,,696
+Colombia,COL,,,,34
+Costa Rica,CRI,,,,4
+Croatia,HRV,,,,52
+Cuba,CUB,,,,241
+Cyprus,CYP,,,,1
+Czech Republic,CZE,,,,98
+Denmark,DNK,,,,206
+Djibouti,DJI,,,,1
+Dominican Republic,DMA,,,,12
+Ecuador,ECU,,,,5
+Egypt,EGY,,,,38
+Eritrea,ERI,,,,1
+Estonia,EST,,,,43
+Ethiopia,ETH,,,,58
+Fiji,FJI,,,,3
+Finland,FIN,,,,472
+France,FRA,,,,874
+Gabon,GAB,,,,1
+Georgia,GEO,,,,40
+Germany,DEU,,,,892
+Ghana,GHA,,,,5
+Greece,GRC,,,,121
+Grenada,GRD,,,,3
+Guatemala,GTM,,,,1
+Guyana,GUY,,,,1
+Haiti,HTI,,,,2
+Hong Kong,HKG,,,,9
+Hungary,HUN,,,,518
+Iceland,ISL,,,,4
+India,IND,,,,35
+Indonesia,IDN,,,,37
+Iran,IRN,,,,76
+Iraq,IRQ,,,,1
+Ireland,IRL,,,,35
+Israel,ISR,,,,13
+Italy,ITA,,,,742
+Ivory Coast,CIV,,,,4
+Jamaica,JAM,,,,87
+Japan,JPN,,,,555
+Jordan,JOR,,,,3
+Kazakhstan,KAZ,,,,80
+Kenya,KEN,,,,113
+Kuwait,KWT,,,,3
+Kyrgyzstan,KGZ,,,,7
+Latvia,LVA,,,,30
+Lebanon,LBN,,,,4
+Liechtenstein,LIE,,,,10
+Lithuania,LTU,,,,26
+Luxembourg,LUX,,,,4
+Malaysia,MYS,,,,13
+Mauritius,MDV,,,,1
+Mexico,MEX,,,,73
+Moldova,MDA,,,,6
+Mongolia,MNG,,,,30
+Montenegro,MNE,,,,1
+Morocco,MAR,,,,24
+Mozambique,MOZ,,,,2
+Namibia,NAM,,,,5
+Netherlands,NLD,,,,451
+New Zealand,NZL,,,,140
+Niger,NER,,,,2
+Nigeria,NGA,,,,27
+North Korea,PRK,,,,56
+North Macedonia,MKD,,,,2
+Norway,NOR,,,,528
+Pakistan,PAK,,,,10
+Panama,PAN,,,,3
+Paraguay,PRY,,,,1
+Peru,PER,,,,4
+Philippines,PHL,,,,14
+Poland,POL,,,,320
+Portugal,PRT,,,,28
+Puerto Rico,PRI,,,,10
+Qatar,QAT,,,,8
+Romania,ROU,,,,309
+Russia,RUS,,,,547
+Samoa,WSM,,,,1
+San Marino,SMR,,,,3
+Saudi Arabia,SAU,,,,4
+Senegal,SEN,,,,1
+Serbia,SRB,,,,24
+Singapore,SYC,,,,5
+Slovakia,SVK,,,,40
+Slovenia,SVN,,,,45
+South Africa,ZAF,,,,89
+South Korea,KOR,,,,357
+Spain,ESP,,,,171
+Sri Lanka,LKA,,,,2
+Sudan,SDN,,,,1
+Suriname,SUR,,,,2
+Sweden,SWE,,,,661
+Switzerland,CHE,,,,358
+Syria,SYR,,,,4
+Tajikistan,TJK,,,,4
+Tanzania,TZA,,,,2
+Thailand,THA,,,,35
+Togo,TGO,,,,1
+Tonga,TON,,,,1
+Trinidad and Tobago,TTO,,,,19
+Tunisia,TUN,,,,15
+Turkey,TUR,,,,104
+Turkmenistan,TKM,,,,1
+Uganda,UGA,,,,11
+Ukraine,UKR,,,,147
+United Arab Emirates,ARE,,,,2
+United Kingdom,GBR,,,,948
+United States,USA,,,,2980
+Uruguay,URY,,,,10
+Uzbekistan,UZB,,,,37
+Venezuela,VEN,,,,19
+Vietnam,VNM,,,,5
+Zambia,ZMB,,,,2
+Zimbabwe,ZWE,,,,8
