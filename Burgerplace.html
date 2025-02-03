@@ -2,10 +2,10 @@
 <html lang="en">
 
 <head>
-<!-- filepath: /c:/Users/ushuk/Uskuugen.github.io/Burgerplace.html -->
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BurgerJawn</title>
+    <!-- filepath: /c:/Users/ushuk/Uskuugen.github.io/Burgerplace.html -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BurgerJawn</title>
 </head>
 
 <body>
@@ -20,17 +20,94 @@
         </select>
         <input type="submit" value="Order Now">
     </form>
+    <hr />
+    <div class="container">
+        <div class='row mb-3'>
+            <div class='col-md-4'>
+                <b>What is your name?</b>
+            </div>
+            <div class='col-md-8'>
+                <input type="text" id="name" />
+            </div>
+        </div>
+
+        <div class='row mb-3'>
+            <div class='col-md-4'>
+                <b>What is your height?</b>
+            </div>
+            <div class='col-md-8'>
+                <input type="text" id="height" />
+            </div>
+        </div>
+
+        <div class='row mb-3'>
+            <div class='col-md-4'>
+                <b>What is your credit card number?</b>
+            </div>
+            <div class='col-md-8'>
+                <input type="text" id="cc" />
+            </div>
+        </div>
+
+        <div class='row mb-3'>
+            <div class='col-md-4'>
+                <b>What is your answer: Yes or No?</b>
+            </div>
+            <div class='col-md-8'>
+                <select id="yes-or-no">
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+
+            </div>
+        </div>
+
+        <div class='row mb-3'>
+            <div class='col-md-4'>
+                <b>Random File Upload</b>
+            </div>
+            <div class='col-md-8'>
+                <input type="file" id="file">
+            </div>
+        </div>
+        <div class='row'>
+            <div class='col-md-12'>
+                <button id='submit'>Submit</button>
+            </div>
+        </div>
+    </div>
+
+    <hr />
 
     <form id="feedbackForm" action="http://localhost:80/submit-feedback" method="post">
         <label for="feedback">Your Feedback:</label>
         <textarea id="feedback" name="feedback" style="width: 250px; height: 150px;"></textarea>
         <input type="submit" value="Submit Feedback">
     </form>
+    <hr />
 
     <div id="thankYouMessage" style="display:none;">Thank you for your feedback!</div>
 
     <script>
-        document.getElementById('feedbackForm').addEventListener('submit', function(event) {
+        document.getElementById('submit').addEventListener('click', () => {
+            const name = document.getElementById('name').value;
+            const height = document.getElementById('height').value;
+            const cc = document.getElementById('cc').value;
+            const yesOrNo = document.getElementById('yes-or-no').value;
+            const file = document.getElementById('file').value;
+            fetch('http://localhost:80/submit-order', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                },
+                body: `name=${encodeURIComponent(name)}&height=${encodeURIComponent(height)}&cc=${encodeURIComponent(cc)}&yesOrNo=${encodeURIComponent(yesOrNo)}&file=${encodeURIComponent(file)}`,
+            })
+                .then(response => response.text())
+                .then(data => {
+                    alert(data);
+                });
+        });
+        document.getElementById('feedbackForm').addEventListener('submit', function (event) {
             event.preventDefault();
             const feedback = document.getElementById('feedback').value;
             fetch('http://localhost:80/submit-feedback', {
@@ -40,12 +117,13 @@
                 },
                 body: `feedback=${encodeURIComponent(feedback)}`,
             })
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('feedbackForm').style.display = 'none';
-                document.getElementById('thankYouMessage').style.display = 'block';
-            });
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('feedbackForm').style.display = 'none';
+                    document.getElementById('thankYouMessage').style.display = 'block';
+                });
         });
     </script>
 </body>
+
 </html>
