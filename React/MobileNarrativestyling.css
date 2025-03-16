@@ -1,0 +1,381 @@
+/* General Styling */
+body {
+    background-color: antiquewhite;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    background-color: gold;
+    color: bisque;
+}
+
+h1:hover {
+    background-color: goldenrod;
+    color: aliceblue;
+}
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Bubble Chart */
+.bubbles {
+    stroke-width: 2px;
+    stroke: white;
+}
+
+.bubbles:hover {
+    stroke: black;
+    stroke-width: 2px;
+}
+
+/* Tooltip Styling */
+.tooltip {
+    position: absolute;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    pointer-events: none;
+    opacity: 0;
+}
+
+/* Choropleth Map */
+.Country {
+    stroke: transparent;
+    opacity: 0.8;
+    transition: all 0.2s ease;
+}
+
+.Country:hover {
+    stroke: black;
+    stroke-width: 1.5px;
+    opacity: 1;
+}
+
+/* Table Styling */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th {
+    background-color: #007bff;
+    /* Bootstrap Primary Color */
+    color: white;
+    padding: 10px;
+}
+
+.table td {
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+
+.table .ranking {
+    width: 50px;
+    text-align: center;
+}
+
+.table .ranking:hover,
+.table .country:hover {
+    background-color: gray;
+    color: #ffd700;
+}
+
+.table .country {
+    width: 150px;
+    text-align: left;
+}
+
+.table .gold {
+    width: 80px;
+    background-color: #ffd700;
+    /* Gold Color */
+}
+
+.table .silver {
+    width: 80px;
+    background-color: #CDD4E7;
+    /* Silver Color */
+}
+
+.table .bronze {
+    width: 80px;
+    background-color: #EDA75A;
+    /* Bronze Color */
+}
+
+.table .total {
+    width: 100px;
+    text-align: center;
+    background-color: honeydew;
+}
+
+.table .olympian {
+    width: 150px;
+    text-align: left;
+    background-color: cornsilk;
+}
+
+.table .head {
+    background-color: #007bff;
+}
+
+/* Chart Container Margin */
+#bubble-chart {
+    margin-bottom: 50px;
+}
+
+.xAxis line {
+    stroke: #B8B8B8;
+}
+
+.tooltipCloud {
+    position: absolute;
+    text-align: center;
+    width: 150px;
+    padding: 5px;
+    font: 12px sans-serif;
+    background: lightsteelblue;
+    border: 0px;
+    border-radius: 8px;
+    pointer-events: none;
+}
+
+nav {
+    display: flex;
+    background-color: #312d27;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+nav .logo {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 0.5rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover {
+    background: #575757;
+}
+
+section {
+    height: 100vh;
+    padding: 2rem;
+    margin-top: 60px;
+}
+
+/* Responsive for small screens */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        display: none;
+        width: 100%;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        left: 0;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    nav .menu-toggle {
+        display: block;
+        color: #fff;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+}
+
+nav .menu-toggle {
+    display: none;
+}
+
+.section-container {
+    margin-bottom: 20px;
+    margin-bottom: 20px;
+    overflow: auto;
+}
+
+#react-data-table {
+    background-color: #f9f9f9;
+    /* Optional: to visually separate the sections */
+    padding: 12px;
+    /* Optional: for a cleaner look */
+}
+
+#bubble-chart-section {
+    background-color: #f9f9f9;
+    /* Optional */
+    padding: 20px;
+    /* Optional */
+}
+#bubble:hover{
+    background-color: #ff6384; /* New color on hover */
+    border-color: black; /* Black outline on hover */
+    transform: scale(1.2); /* Slightly increase size*/
+}
+#Map{
+    background-color: #f9f9f9;
+    /* Optional */
+    padding: 20px;
+}
+.slider-filter{
+    margin: 10px 0;
+    margin-top: 20px;
+    text-align: center;
+}
+#WordCloud{
+    background-color: #f9f9f9;
+    /* Optional */
+    padding: 20px;
+    .wordcloud-container {
+        max-width: 100%; /* Ensure it scales with the screen size */
+        height: auto; /* Let it adjust its height based on content */
+        margin: 20px auto; /* Center the container with some margin */
+    }
+}
+.image-container .image {
+    max-width: 90%; /* Ensure image doesn’t overflow */
+    height: auto;
+    margin: 0 20px; /* Add space around the image */
+    overflow: auto;
+}
+.anim{
+    animation: myAnim 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes myAnim {
+    from{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(45deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+/* Section Title Styling */
+.section-title {
+    text-align: center;
+    margin: 50px 0;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+/* Section Container Styling */
+.notable-moments {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 0 10%;
+    margin-bottom: 50px;
+}
+
+.moment {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.moment:hover {
+    transform: scale(1.05); /* Slightly scale the moment box on hover */
+}
+
+/* Image Styling */
+.moment img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #f4f4f4;
+}
+
+/* Description Styling */
+.description {
+    padding: 20px;
+    text-align: center;
+}
+
+.description h3 {
+    font-size: 24px;
+    color: #333;
+}
+
+.description p {
+    font-size: 16px;
+    color: #777;
+    margin-top: 10px;
+}
+/* Video Section Styling */
+.video-section {
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.video-container {
+    width: 100%;
+    max-width: 1200px; /* Max width to prevent it from becoming too large */
+    margin: 0 auto; /* Centers the video horizontally */
+    padding: 10px; /* Breathing space around the video */
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 500px; /* Adjust the height of the video as needed */
+    border: none;
+    border-radius: 8px; /* Optional: rounded corners */
+}
+
+.video-description {
+    margin-top: 20px;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: #333;
+}
+
+.video-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .video-container iframe {
+        height: 300px; /* Adjust height for smaller screens */
+    }
+}
