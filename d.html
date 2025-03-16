@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AlphaSigma</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- React -->
+  <script src="https://unpkg.com/react@18.2.0/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18.2.0/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="MobileNarrativestyling.css">
+
+  <!-- React Component -->
+  <script src="./assets/js/React/Component/ReactDataTable.js" type="text/babel"></script>
+
+  <!-- D3.js -->
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+</head>
+
+<body>
+  <!-- React Data Table -->
+  <div id="react-data-table"></div>
+
+  <!-- Icons -->
+  <i class="fa-solid fa-futbol"></i>
+  <i class="fa-solid fa-medal"></i>
+  <i class="fa-regular fa-futbol"></i>
+  <i class="fa-solid fa-trophy"></i>
+
+  <!-- Bubble Chart Container -->
+  <div id="bubble-chart"></div>
+
+  <!-- Choropleth Map Container -->
+  <div id="choropleth-map"></div>
+
+  <!-- Bubble Chart Script -->
+  <script>
+    // Set the dimensions and margins of the graph
+    var margin = { top: 10, right: 20, bottom: 30, left: 50 },
+      width = 500 - margin.left - margin.right,
+      height = 420 - margin.top - margin.bottom;
+
+    // Append the svg object to the body of the page
+    var svgBubble = d3.select("#bubble-chart")
+      .append("svg")
+      .attr("width", width + margin.left + margin.right)
+      .attr("height", height + margin.top + margin.bottom)
+      .append("g")
+      .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+    d3.csv("https://raw.githubusercontent.com/Uskuugen/Uskuugen.github.io/refs/heads/main/Bubble.csv")
+      .then(function (data) {
+        data.forEach(d => {
+          d.medals = +d.medals;
+          d.population = +d.population;
+        });
+
+        // Add axes and scales
+        var x = d3.scaleLinear().domain([1, 3000]).range([0, width]);
+        svgBubble.append("g").attr("transform", "translate(0," + height + ")").call(d3.axisBottom(x));
+
+        var y = d3.scaleLinear().domain([0, 1500000000]).range([height, 0]);
+        svgBubble.append("g").call(d3.axisLeft(y));
+
+        var z = d3.scaleLinear().domain([1, 3000]).range([4, 40]);
+        var myColor = d3.scaleOrdinal().domain(["Asia", "Europe", "Americas", "Africa", "Oceania"]).range(d3.schemeSet2);
+
+        var tooltip = d3.select("#bubble-chart").append("div").attr("class", "tooltip").style("opacity", 0);
+
+        var showTooltip = function (event, d) {
+          tooltip.style("opacity", 1)
+            .html("Country: " + d.country + "<br>Medals: " + d.medals + "<br>Population: " + d.population)
+            .style("left", (event.pageX + 30) + "px")
+            .style("top", (event.pageY + 30) + "px");
+        };
+
+        var hideTooltip = function () {
+          tooltip.style("opacity", 0);
+        };
+
+        svgBubble.append('g').selectAll("circle").data(data).enter()
+          .append("circle")
+          .attr("cx", d => x(d.medals))
+          .attr("cy", d => y(d.population))
+          .attr("r", d => z(d.medals))
+          .style("fill", d => myColor(d.continent))
+          .on("mouseover", showTooltip)
+          .on("mouseleave", hideTooltip);
+      });
+  </script>
+
+  <!-- Choropleth Map Script -->
+  <script>
+    const svg = d3.select("#choropleth-map").append("svg").attr("width", 800).attr("height", 500);
+
+    const projection = d3.geoMercator().scale(130).center([0, 20]).translate([400, 250]);
+    const path = d3.geoPath().projection(projection);
+
+    const data = new Map();
+    const colorScale = d3.scaleThreshold().domain([0, 1, 10, 50, 100, 500, 1000, 1500]).range(d3.schemeBlues[9]);
+
+    const tooltipMap = d3.select("#choropleth-map").append("div").attr("class", "tooltip").style("opacity", 0);
+
+    Promise.all([
+      d3.json("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/world.geojson"),
+      d3.csv("https://raw.githubusercontent.com/Uskuugen/Uskuugen.github.io/refs/heads/main/world.csv", d => {
+        data.set(d.code, +d.medals);
+      })
+    ]).then(([geojson]) => {
+      svg.append("g").selectAll("path").data(geojson.features).enter()
+        .append("path")
+        .attr("d", path)
+        .attr("fill", d => {
+          const value = data.get(d.id) || 0;
+          return colorScale(value);
+        })
+        .style("stroke", "transparent")
+        .on("mouseover", (event, d) => {
+          tooltipMap.style("opacity", 1)
+            .html("Country: " + d.properties.name + "<br>Medals: " + (data.get(d.id) || 0))
+            .style("left", (event.pageX + 10) + "px")
+            .style("top", (event.pageY + 10) + "px");
+        })
+        .on("mouseleave", () => tooltipMap.style("opacity", 0));
+    });
+  </script>
+</body>
+
+</html>
+
