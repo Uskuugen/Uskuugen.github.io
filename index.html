@@ -4,12 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Uskuu Batchuluun | Creative</title>
+    <title>Uskuu Batchuluun | Game Dev student</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="Portfolio.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
     <!-- Bootstrap JavaScript & Popper.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -24,7 +26,10 @@
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
                 <!-- Left-aligned brand -->
-                <a class="navbar-brand" href="#">UskuuBatchuluun</a>
+                <a class="navbar-brand" href="#">
+                    <img src="favicon.ico" alt="Logo" style="height: 50px; margin-right: 10px;">
+                    UskuuBatchuluun | Game Dev student
+                </a></a>
                 <!--Nav Bar toggler for mobile devices-->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,28 +39,43 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav mx-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" href="index.html">Home<span class="sr-only">(current)</span></a>
+                            <a class="nav-link active" href="#home">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="projects.html">Projects</a>
+                            <a class="nav-link" href="#projects">Projects</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="Resume.html">Resume</a>
+                            <a class="nav-link" href="#resume">Resume</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="About.html">About me</a>
-                        </li>
-                        <li>
-                            <a class="nav-link" href="react.html">Contact</a>
+                            <a class="nav-link" href="#about">About me</a>
                         </li>
                     </ul>
+                    <!-- Contact Us button -->
+                    <a class="btn btn-primary" href="#contact">Contact me</a>
                 </div>
             </div>
         </nav>
     </header>
-    <p style="background-image: url('Uusku1.JPG');"></p>
     <main>
-        <section class="project-grid">
+        <!-- Home section-->
+        <section id="home" class="homepage-intro">
+            <div class="container">
+                <h1>I Make Games, animations and websites</h1>
+                <p>Hi, I'm Uskuu Batchuluun, a passionate Game Development student. Explore my projects and learn more
+                    about my journey in game development.</p>
+            </div>
+        </section>
+        <br><br><br>
+
+        <!--Projects section-->
+        <section id="projects-intro" class="section-container text-center">
+            <div class="container">
+                <h2>My Projects</h2>
+            </div>
+            <br>
+        </section>
+        <section id="projects" class="project-grid">
             <!-- Project 1 -->
             <div class="project">
                 <div class="project-content">
@@ -64,40 +84,91 @@
                         <source src="PiratesvsMonkeys.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
+                    <p class="project-description">A thrilling adventure game where pirates solve puzzles to retrieve
+                        treasure from monkey.</p>
                 </div>
             </div>
             <!-- Project 2 -->
             <div class="project">
                 <div class="project-content">
-                    <h2 class="project-title">Rok guy adventures</h2>
+                    <h2 class="project-title">Rok guy adventures Trailer</h2>
                     <video class="project-video" controls>
                         <source src="Shadow wizard money gang final version.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
+                    <p class="project-description">A Mixed Reality video game where a witch-pot spawn rock creature
+                        escapes an evil witch</p>
                 </div>
             </div>
             <!-- Project 3 -->
             <div class="project">
                 <div class="project-content">
-                    <h2 class="project-title">Image</h2>
-                    <img class="project img" src="Uusku cropped 1.JPG" alt="Image">
-                </div>
-            </div>
-            <!-- Project 4 -->
-            <div class="project">
-                <div class="project-content">
-                    <h2 class="project-title">Athlet</h2>
-                    <img class="project img" src="Uusku cropped 2.JPG" alt="Image">
-                </div>
-            </div>
-            <!-- Project 5 -->
-            <div class="project">
-                <div class="project-content">
-                    <h2 class="project-title">Image</h2>
-                    <img class="project img" src="Uusku cropped 3.JPG" alt="Image">
+                    <h2 class="project-title">"AthleMark" ReactDataTable</h2>
+                    <img class="project-image" src="Reactdatatable thumbnail picture.png" alt="Image">
+                    <p class="project-description">Web project using React,JS,D3.js to display a narrative story through
+                        database points on Olympic stats</p>
                 </div>
             </div>
         </section>
+        <br><br><br>
+        <!--About me section-->
+        <section id="about" class="section-container text-end">
+            <h2>About Me</h2>
+            <div class="hero-image">
+                <div class="hero-text">
+                    <h1>I am Uskuu</h1>
+                    <p>And I'm a Creative</p>
+                    <button>Contact me</button>
+                </div>
+            </div>
+            <p>I am a Game Dev student at Boise State University, passionate about game development and webdesign. Born
+                & raised in Mongolia.</p>
+        </section>
+        <!-- Resume section-->
+        <section id="resume" class="section-container">
+            <iframe src="usukhchuluun batchuluun resume rework.pdf" width="100%" height="600px"></iframe>
+
+            <!--<iframe frameborder="0" scrolling="no" width="640" height="480"
+                src="https://drive.google.com/file/d/1nbkqkfUoI82FkSBmvCxyIkNziU--csAi/view?usp=drive_link">
+            </iframe>
+            <h2>Resume</h2>-->
+            <!-- Experience details go here -->
+            <div>
+                <p>Or download my resume here</p>
+                <button id="downloadResume" class="btn btn-primary">Download Resume as PDF</button>
+            </div>
+        </section>
+        <br><br><br>
+        <!-- Contact section-->
+        <div id="contact" class="container">
+            <div style="text-align:center">
+                <h2>Contact Us</h2>
+                <p>Swing by for a cup of coffee, or leave us a message:</p>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <img src="/w3images/map.jpg" style="width:100%">
+                </div>
+                <div class="column">
+                    <form action="/action_page.php">
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                        <label for="country">Country</label>
+                        <select id="country" name="country">
+                            <option value="australia">Australia</option>
+                            <option value="canada">Canada</option>
+                            <option value="usa">USA</option>
+                        </select>
+                        <label for="subject">Subject</label>
+                        <textarea id="subject" name="subject" placeholder="Write something.."
+                            style="height:170px"></textarea>
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </div>
     </main>
 
     <footer>

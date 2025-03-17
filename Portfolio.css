@@ -83,7 +83,7 @@ body, html {
 /* The hero image */
 .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Uusku cropped 2.JPG");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Uusku cropped 1.JPG");
 
   /* Set a specific height */
   height: 100%;
@@ -103,6 +103,14 @@ body, html {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
+}
+
+.hero-text h1 {
+  font-size: 50px; /* Adjust the font size as needed */
+}
+
+.hero-text p {
+  font-size: 20px; /* Adjust the font size as needed */
 }
 .flex-container {
     display: flex;
