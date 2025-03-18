@@ -29,7 +29,7 @@
                 <a class="navbar-brand" href="#">
                     <img src="favicon.ico" alt="Logo" style="height: 50px; margin-right: 10px;">
                     UskuuBatchuluun | Game Dev student
-                </a></a>
+                </a>
                 <!--Nav Bar toggler for mobile devices-->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -112,75 +112,84 @@
         </section>
         <br><br><br>
         <!--About me section-->
-        <section id="about" class="section-container text-end">
-            <h2>About Me</h2>
+        <section id="about" class="section-container">
+            <h2 class="text-center">About Me</h2>
+            <br>
             <div class="hero-image">
                 <div class="hero-text">
                     <h1>I am Uskuu</h1>
                     <p>And I'm a Creative</p>
-                    <button>Contact me</button>
+                    <button id="contactme" class="btn btn-primary">Contact me</button>
                 </div>
-            </div>
-            <p>I am a Game Dev student at Boise State University, passionate about game development and webdesign. Born
-                & raised in Mongolia.</p>
-        </section>
-        <!-- Resume section-->
-        <section id="resume" class="section-container">
-            <iframe src="usukhchuluun batchuluun resume rework.pdf" width="100%" height="600px"></iframe>
-
-            <!--<iframe frameborder="0" scrolling="no" width="640" height="480"
-                src="https://drive.google.com/file/d/1nbkqkfUoI82FkSBmvCxyIkNziU--csAi/view?usp=drive_link">
-            </iframe>
-            <h2>Resume</h2>-->
-            <!-- Experience details go here -->
-            <div>
-                <p>Or download my resume here</p>
-                <button id="downloadResume" class="btn btn-primary">Download Resume as PDF</button>
             </div>
         </section>
         <br><br><br>
-        <!-- Contact section-->
-        <div id="contact" class="container">
-            <div style="text-align:center">
-                <h2>Contact Us</h2>
-                <p>Swing by for a cup of coffee, or leave us a message:</p>
+        <!-- Resume section-->
+        <section id="resume" class="section-container">
+            <h2 class="text-center">Know more about me.</h2>
+            <br>
+            <div class="resume-container">
+                <iframe src="usukhchuluun batchuluun resume rework.pdf" width="100%" height="900px"></iframe>
+
+                <!--<iframe frameborder="0" scrolling="no" width="640" height="480"
+                src="https://drive.google.com/file/d/1nbkqkfUoI82FkSBmvCxyIkNziU--csAi/view?usp=drive_link">
+            </iframe>
+            <h2>Resume</h2>-->
             </div>
-            <div class="row">
-                <div class="column">
-                    <img src="/w3images/map.jpg" style="width:100%">
-                </div>
-                <div class="column">
-                    <form action="/action_page.php">
-                        <label for="fname">First Name</label>
-                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
-                        <label for="lname">Last Name</label>
-                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-                        <label for="country">Country</label>
-                        <select id="country" name="country">
-                            <option value="australia">Australia</option>
-                            <option value="canada">Canada</option>
-                            <option value="usa">USA</option>
-                        </select>
-                        <label for="subject">Subject</label>
-                        <textarea id="subject" name="subject" placeholder="Write something.."
-                            style="height:170px"></textarea>
-                        <input type="submit" value="Submit">
-                    </form>
+            <br>
+            <!-- Resume download button goes here -->
+            <div>
+                <div class="text-center">
+                    <button id="downloadResume" class="btn btn-primary">Download Resume as PDF</button>
                 </div>
             </div>
-        </div>
+        </section>
+        <br><br><br>
+
+        <!-- Skills section-->
+        <section id="skills" class="section-container">
+            <h2 class="text-center">Skills</h2>
+            <br>
+            <div class="skills-container">
+                <div class="skill">
+                    <p>Unity, Unreal Engine, C#, C++, Blender, 3DS Max; Web Development: HTML, CSS, JavaScript, React,
+                        Node.js, D3.js; Animation: Maya, Blender, 3DS Max, Adobe After Effects</p>
+                </div>
+            </div>
+
+            <br><br><br>
+            <!-- Contact section-->
+            <div id="contact" class="container">
+                <div class="text-center">
+                    <h2>Contact</h2>
+                </div>
+                <div class="row justify-content-center align-items-center text-center">
+                    <div class="col-md-6">
+                        <form id="contactForm">
+                            <div class="mb-3">
+                                <label for="subject" class="form-label">Message</label>
+                                <textarea id="subject" name="subject" class="form-control"
+                                    placeholder="Write something.." rows="4" required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
     </main>
 
     <footer>
         <p>&copy; 2025 <a href="https://github.com/Uskuugen" target="_blank">Uskuu Batchuluun</a>. All rights reserved.
         <div class="social-links">
-            <a href="#"><i class="fab fa-instagram" style="font-size: 28px;"></i></a>
-            <a href="#"><i class="fab fa-twitter" style="font-size: 24px;"></i></a>
-            <a href="#"><i class="fab fa-github" style="font-size: 24px;"></i></a>
-            <a href="#"><i class="fab fa-linkedin" style="font-size: 24px;"></i></a>
+            <a href="https://github.com/Uskuugen" target="_blank"><i class="fab fa-github"
+                    style="font-size: 24px;"></i></a>
+            <a href="https://www.linkedin.com/in/uusku-batchuluun-6772782b4/" target="_blank"><i class="fab fa-linkedin"
+                    style="font-size: 24px;"></i></a>
         </div>
         </p>
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
