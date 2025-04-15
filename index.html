@@ -22,38 +22,45 @@
 
 <body>
     <header>
-        <!-- Bootstrap 5 Navbar -->
+        <!-- Just an image -->
+        <nav class="navbar navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">
+                <img src="favicon.ico" width="30" height="30" alt="">
+            </a>
+        </nav>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container">
-                <!-- Left-aligned brand -->
-                <a class="navbar-brand" href="#">
-                    <img src="favicon.ico" alt="Logo" style="height: 50px; margin-right: 10px;">
-                    UskuuBatchuluun | Game Dev student
-                </a>
-                <!--Nav Bar toggler for mobile devices-->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <!-- Nav Bar centralized-->
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav mx-auto">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#home">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#projects">Projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#resume">Resume</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about">About me</a>
-                        </li>
-                    </ul>
-                    <!-- Contact Us button -->
-                    <a class="btn btn-primary" href="#contact">Contact me</a>
-                </div>
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Projects</a>
+                            <a class="dropdown-item" href="#">More about me</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Contacts</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Disabled</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
             </div>
         </nav>
     </header>
@@ -104,8 +111,8 @@
             <div class="project">
                 <div class="project-content">
                     <h2 class="project-title">"AthleMark" ReactDataTable</h2>
-                    <img class="project-image" src="Reactdatatable thumbnail picture.png" alt="Image">
-                        <source src ="react.html" type="video/mp4">
+                    <img class="project-image" src="image/Reactdatatable thumbnail picture.png" alt="Image">
+                    <source src="react.html" type="video/mp4">
                     <p class="project-description">Web project using React,JS,D3.js to display a narrative story through
                         database points on Olympic stats</p>
                 </div>
