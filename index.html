@@ -33,9 +33,10 @@
 
 <body>
     <header>
+
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
 
-            <a class="navbar-brand" href="#">Uskuu Batchuluun</a>
+            <a class="navbar-brand navbar-expand-lg" href="#">Uskuu Batchuluun</a>
             </div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,35 +52,14 @@
                 </div>
             </div>
         </nav>
-
-        <!-- Breadcrumbs -->
-
-        <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item active" aria-current="page">Home</li>
-            </ol>
-        </nav>
-
     </header>
     <main>
-        <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="..." alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+        <div id="home" class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1 class="display-3">Welcome to my page |</h1>
+                <p class="lead">Hi, I make games, animations and love to code pretty websites. Hit me up xoxo</p>
             </div>
         </div>
-        <!-- Home section-->
-        <section id="home" class="homepage-intro">
-            <div class="container">
-                <h1>I Make Games, animations and websites</h1>
-                <p>Hi, I'm Uskuu Batchuluun, a passionate Game Development student. Explore my projects and learn more
-                    about my journey in game development.</p>
-            </div>
-        </section>
-        <br><br><br>
 
         <!--Projects section-->
         <section id="projects-intro" class="section-container text-center">
@@ -89,40 +69,37 @@
             <br>
         </section>
         <section id="projects" class="project-grid">
-            <!-- Project 1 -->
-            <div class="project">
-                <div class="project-content">
-                    <h2 class="project-title">Pirates V Monkeys</h2>
-                    <video class="project-video" controls>
-                        <source src="PiratesvsMonkeys.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <p class="project-description">A thrilling adventure game where pirates solve puzzles to retrieve
-                        treasure from monkey.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+
+            <!-- Project 4 -->
+            <div class="card" style="width: 22rem;">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="videos/Shadow wizard money gang final version.mp4"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Pirates vs Monkeys</h5>
+                    <p class="card-text">AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</p>
+                    <a href="#" class="btn btn-outline-dark btn-sm">See more</a>
                 </div>
             </div>
-            <!-- Project 2 -->
-            <div class="project">
-                <div class="project-content">
-                    <h2 class="project-title">Rok guy adventures Trailer</h2>
-                    <video class="project-video" controls>
-                        <source src="Shadow wizard money gang final version.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <p class="project-description">A Mixed Reality video game where a witch-pot spawn rock creature
-                        escapes an evil witch</p>
+            <!-- Project 4 -->
+            <div class="card" style="width: 22rem;">
+                <img class="card-img-top" src="image/thumbnail2.png" alt="reactdatatable image">
+                <div class="card-body">
+                    <h5 class="card-title">UX/UI Mobile app design project</h5>
+                    <p class="card-text">Improving an existing app using Design principles. Creating digital wireframes
+                        based on user feedback.</p>
+                    <a href="#" class="btn btn-outline-dark btn-sm">See more</a>
                 </div>
             </div>
-            <!-- Project 3 -->
-            <div class="project">
-                <div class="project-content">
-                    <h2 class="project-title">"AthleMark" ReactDataTable</h2>
-                    <img class="project-image" src="image/Reactdatatable thumbnail picture.png" alt="Image">
-                    <source src="react.html" type="video/mp4">
-                    <p class="project-description">Web project using React,JS,D3.js to display a narrative story through
-                        database points on Olympic stats</p>
-                        <a href="reactdatatable/react.html" class="btn btn-primary">See more</a>
+            <!-- Project 4 -->
+            <div class="card" style="width: 22rem;">
+                <img class="card-img-top" src="image/Reactdatatable thumbnail picture.png" alt="reactdatatable image">
+                <div class="card-body">
+                    <h5 class="card-title">ReactDataTable</h5>
+                    <p class="card-text">Using React,JS,D3.js to display data constructors based on Olympics and it's
+                        statistics</p>
+                    <a href="reactdatatable/react.html" class="btn btn-outline-dark btn-sm">See more</a>
                 </div>
             </div>
         </section>
@@ -132,10 +109,11 @@
             <h2 class="text-center">About Me</h2>
             <br>
             <div class="hero-image">
+                <img src="image/Uusku cropped 1.JPG" alt="Uskuu Batchuluun" class="img-fluid">
                 <div class="hero-text">
                     <h1>I am Uskuu</h1>
                     <p>And I'm a Creative</p>
-                    <button id="contactme" class="btn btn-primary">Contact me</button>
+                    <button id="contactme" class="btn btn-dark btn">Contact me</button>
                 </div>
             </div>
         </section>
