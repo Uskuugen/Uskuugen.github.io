@@ -35,31 +35,33 @@
     <header>
 
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-
-            <a class="navbar-brand navbar-expand-lg" href="#">Uskuu Batchuluun</a>
-            </div>
+            <a class="navbar-brand navbar-expand-lg" href="#">&nbsp; &nbsp;Uskuu Batchuluun</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            </div>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <div class="navbar-nav">
-
-                    <a class="nav-item nav-link active" href="#home">Home<span class="sr-only">(current)</span></a>
-                    <a class="nav-item nav-link" href="#projects">Projects</a>
-                    <a class="nav-item nav-link" href="#about">About</a>
+                    <a class="nav-item nav-link mx-3" href="#home" id="nav-home">Home</a>
+                    <a class="nav-item nav-link mx-3" href="#projects" id="nav-projects">Projects</a>
+                    <a class="nav-item nav-link mx-3" href="#about" id="nav-about">About</a>
                 </div>
             </div>
         </nav>
     </header>
     <main>
+
+        <!-- Intro section-->
+        <br><br>
         <div id="home" class="jumbotron jumbotron-fluid">
             <div class="container">
-                <h1 class="display-3">Welcome to my page |</h1>
-                <p class="lead">Hi, I make games, animations and love to code pretty websites. Hit me up xoxo</p>
+                <h1 class="display-2  Left-aligned" style=>Hello, my name is Uskuu</h1>
+                <p class="lead">Hi, I make games, animations and love to create pretty websites.</p>
             </div>
         </div>
+        <br>
+        <hr>
+        <br><br>
 
         <!--Projects section-->
         <section id="projects-intro" class="section-container text-center">
@@ -70,21 +72,21 @@
         </section>
         <section id="projects" class="project-grid">
 
-            <!-- Project 4 -->
-            <div class="card" style="width: 22rem;">
+            <!-- Project 1 -->
+            <div class="card" style="width: 22rem; height: 75rem;">
                 <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" src="videos/PiratesvsMonkeys.mp4"
-                        allowfullscreen></iframe>
+                    <iframe class="embed-responsive-item" src="videos/PiratesvsMonkeys.mp4" allowfullscreen></iframe>
                 </div>
                 <div class="card-body">
                     <h5 class="card-title">Pirates vs Monkeys</h5>
-                    <p class="card-text">Platform puzzle game where you play as a pirate searching for his bounty stolen by monkeys </p>
+                    <p class="card-text">Platform puzzle game where you play as a pirate searching for his bounty stolen
+                        by monkeys </p>
                     <a href="#" class="btn btn-outline-dark btn-sm">See more</a>
                 </div>
             </div>
-            <!-- Project 4 -->
-            <div class="card" style="width: 22rem;">
-                <img class="card-img-top" src="image/thumbnail2.png" alt="reactdatatable image">
+            <!-- Project 2 -->
+            <div class="card" style="width: 22rem; height: 75rem;">
+                <img class="card-img" src="image/thumbnail2.png" alt="UX/UI image">
                 <div class="card-body">
                     <h5 class="card-title">UX/UI Mobile app design project</h5>
                     <p class="card-text">Improving an existing app using Design principles. Creating digital wireframes
@@ -92,89 +94,99 @@
                     <a href="#" class="btn btn-outline-dark btn-sm">See more</a>
                 </div>
             </div>
-            <!-- Project 4 -->
-            <div class="card" style="width: 22rem;">
-                <img class="card-img-top" src="image/Reactdatatable thumbnail picture.png" alt="reactdatatable image">
+            <!-- Project 3 -->
+            <div class="card" style="width: 22rem; height: 75rem;">
+                <img class="card-img" src="image/Reactdatatable thumbnail picture.png" alt="reactdatatable image"
+                    style="size: 80%;">
                 <div class="card-body">
                     <h5 class="card-title">ReactDataTable</h5>
-                    <p class="card-text">Using React,JS,D3.js to display data constructors based on Olympics and it's
+                    <p class="card-text">Using React,JS,D3.js to display data constructors based on Olympics and its
                         statistics</p>
                     <a href="reactdatatable/react.html" class="btn btn-outline-dark btn-sm">See more</a>
                 </div>
             </div>
         </section>
         <br><br><br>
+
+        <br>
+        <hr>
+        <br><br>
+
         <!--About me section-->
         <section id="about" class="section-container">
-            <h2 class="text-center">About Me</h2>
             <br>
-            <div class="hero-image">
-                <img src="image/Uusku cropped 1.JPG" alt="Uskuu Batchuluun" class="img-fluid">
-                <div class="hero-text">
+            <div class="row">
+                <div class="col-md-6 d-flex flex-column justify-content-center">
                     <h1>I am Uskuu</h1>
-                    <p>And I'm a Creative</p>
-                    <button id="contactme" class="btn btn-dark btn">Contact me</button>
+                    <p class="lead">3rd year Game development student at Boise State. I love creating interactable
+                        environments,
+                        animations and characters. My favorite project I am working on right now is an open-world
+                        survival game based in Mongolia.
+                    </p>
+                    <button id="contactme" class="btn btn-dark">Contact me</button>
+                </div>
+                <div class="col-md-6">
+                    <img src="image/Uusku cropped 1.JPG" alt="Uskuu Batchuluun" class="img-fluid">
                 </div>
             </div>
         </section>
         <br><br><br>
-        <!-- Resume section-->
+
+        <!-- Document section-->
         <section id="resume" class="section-container">
-            <h2 class="text-center">Know more about me.</h2>
-            <br>
-            <div class="resume-container">
-                <iframe src="usukhchuluun batchuluun resume rework.pdf" width="100%" height="900px"></iframe>
-
-                <!--<iframe frameborder="0" scrolling="no" width="640" height="480"
-                src="https://drive.google.com/file/d/1nbkqkfUoI82FkSBmvCxyIkNziU--csAi/view?usp=drive_link">
-            </iframe>
-            <h2>Resume</h2>-->
-            </div>
-            <br>
-            <!-- Resume download button goes here -->
-            <div>
-                <div class="text-center">
-                    <button id="downloadResume" class="btn btn-primary">Download Resume as PDF</button>
-                </div>
-            </div>
-        </section>
-        <br><br><br>
-
-        <!-- Skills section-->
-        <section id="skills" class="section-container">
-            <h2 class="text-center">Skills</h2>
-            <br>
-            <div class="skills-container">
-                <div class="skill">
-                    <p>Unity, Unreal Engine, C#, C++, Blender, 3DS Max; Web Development: HTML, CSS, JavaScript, React,
-                        Node.js, D3.js; Animation: Maya, Blender, 3DS Max, Adobe After Effects</p>
-                </div>
-            </div>
-
-            <br><br><br>
-            <!-- Contact section-->
-            <div id="contact" class="container">
-                <div class="text-center">
-                    <h2>Contact</h2>
-                </div>
-                <div class="row justify-content-center align-items-center text-center">
-                    <div class="col-md-6">
-                        <form id="contactForm">
-                            <div class="mb-3">
-                                <label for="subject" class="form-label">Message</label>
-                                <textarea id="subject" name="subject" class="form-control"
-                                    placeholder="Write something.." rows="4" required></textarea>
-                            </div>
-
-                            <button type="submit" class="btn btn-primary">Submit</button>
-                        </form>
+            <div class="container">
+                <!-- Download section-->
+                <div class="row">
+                    <div class="col-md-6 d-flex flex-column justify-content-center">
+                        <p class="lead">Check out my resume or download it!</p>
+                    </div>
+                    <div>
+                        <button id="downloadButton" class="btn btn-dark" onclick="confirmDownload()">Download
+                            File</button>
                     </div>
                 </div>
             </div>
+            <br>
+            <div class="resume-container">
+                <iframe src="image/usukhchuluun batchuluun resume rework.pdf" width="100%" height="900px"></iframe>
+            </div>
+
+
+
+            <script>
+                function confirmDownload() {
+                    const userConfirmed = confirm("Are you sure you want to download this file?");
+                    if (userConfirmed) {
+                        window.location.href = "https://drive.google.com/uc?export=download&id=1nbkqkfUoI82FkSBmvCxyIkNziU--csAi";
+                    }
+                }
+
+            </script>
+            <br><br><br>
+
+            <div class="contact-form-container">
+                <h2>Contact Us</h2>
+                <form id="contactForm" action="https://formspree.io/f/mqaqzwjb" method="POST">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" placeholder="please enter your email" required>
+                        <span class="error-message" id="emailError"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="please enter your Message" rows="5"
+                            required></textarea>
+                        <span class="error-message" id="messageError"></span>
+                    </div>
+                    <button id="submit" class="btn btn-dark">Contact me</button>
+                </form>
+            </div>
+
     </main>
 
+
     <footer>
-        <p>&copy; 2025 <a href="https://github.com/Uskuugen" target="_blank">Uskuu Batchuluun</a>. All rights reserved.
+        <p class="footer">&copy; 2025 <a>Uskuu Batchuluun</a>. All rights reserved.
         <div class="social-links">
             <a href="https://github.com/Uskuugen" target="_blank"><i class="fab fa-github"
                     style="font-size: 24px;"></i></a>
@@ -185,5 +197,37 @@
     </footer>
     <script src="script.js"></script>
 </body>
-
+<!-- Place this script at the end of the body tag -->
+<script>
+    var form = document.getElementById("my-form");
+    
+    async function handleSubmit(event) {
+      event.preventDefault();
+      var status = document.getElementById("my-form-status");
+      var data = new FormData(event.target);
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+      }).then(response => {
+        if (response.ok) {
+          status.innerHTML = "Thanks for your submission!";
+          form.reset()
+        } else {
+          response.json().then(data => {
+            if (Object.hasOwn(data, 'errors')) {
+              status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+            } else {
+              status.innerHTML = "Oops! There was a problem submitting your form"
+            }
+          })
+        }
+      }).catch(error => {
+        status.innerHTML = "Oops! There was a problem submitting your form"
+      });
+    }
+    form.addEventListener("submit", handleSubmit)
+  </script>
 </html>
