@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
 
-        // Default to #home if no section is activ
+        // Default to #home if no section is active
     }
 
     // Run on scroll and on page load
