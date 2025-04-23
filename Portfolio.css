@@ -33,13 +33,32 @@ main {
   width: 100%;
 }
 
-
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  max-height: 80vh;
-  overflow-y: auto;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid layout */
+  gap: 2rem; /* Increase the space between grid items */
+  padding: 2rem; /* Add padding around the grid */
+  max-height: 100%; /* Ensure the grid does not exceed the container height */
+  overflow: hidden; /* Prevent scrollbars */
+}
+
+.project-grid .card {
+  height: auto; /* Allow cards to adjust height automatically */
+  max-height: 400px; /* Optional: Limit the maximum height of cards */
+  overflow: hidden; /* Hide any overflowing content */
+}
+
+.project-grid .card img,
+.project-grid .card iframe {
+  width: 100%; /* Ensure images and iframes fit within the card */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Crop images to fit the card */
+}
+
+.project-grid .card-body {
+  overflow: hidden; /* Prevent scrollbars in the card body */
+  text-overflow: ellipsis; /* Truncate overflowing text */
+  white-space: nowrap; /* Prevent text wrapping */
 }
 
 .project {
