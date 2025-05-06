@@ -39,106 +39,135 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <div class="navbar-nav">
                     <a class="nav-item nav-link mx-3" href="#home" id="nav-home">Home</a>
-                    <a class="nav-item nav-link mx-3" href="#projects" id="nav-projects">Projects</a>
+                    <a class="nav-item nav-link mx-3" href="projects.html" id="nav-projects">Projects</a>
                     <a class="nav-item nav-link mx-3" href="#about" id="nav-about">About</a>
                 </div>
             </div>
         </nav>
     </header>
     <main>
-        <div id="home" class="jumbotron jumbotron-fluid">
+        <div id="home" class="jumbotron jumbotron-fluid text-center mb-0">
             <div class="container">
-                <h1 class="display-2 Left-aligned">Hello, my name is Uskuu</h1>
-                <p class="lead">Hi, I make games, animations and love to create pretty websites.</p>
+            <h1 class="display-2">Welcome to my Portfolio</h1>
+            <p class="lead">I make games, animations, and love to create beautiful websites.</p>
             </div>
         </div>
-        <section id="projects-intro" class="section-container text-center">
+        <hr>
+        <section id="projects-intro" class="section-container text-center py-4">
             <div class="container">
-                <h2>My Projects</h2>
+            <h2 class="mb-3">My Projects</h2>
             </div>
         </section>
-        <section id="projects" class="project-grid">
-            <div class="card">
-                <div class="ratio ratio-16x9">
-                    <video class="embed-responsive-item" src="videos/PiratesvsMonkeys.mp4" controls></video>
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title">Pirates vs Monkeys</h5>
-                    <p class="card-text">Platform puzzle game where you play as a pirate searching for his bounty stolen
-                        by monkeys.</p>
-                    <a href="projects.html" class="btn btn-outline-dark btn-sm">See more</a>
-                </div>
-            </div>
-            <div class="card">
-                <img class="card-img" src="image/thumbnail2.png" alt="UX/UI image">
-                <div class="card-body">
-                    <h5 class="card-title">UX/UI Mobile app design project</h5>
-                    <p class="card-text">Improving an existing app using Design principles. Creating digital wireframes
-                        based on user feedback.</p>
-                    <a href="projects.html" class="btn btn-outline-dark btn-sm">See more</a>
-                </div>
-            </div>
-            <div class="card">
-                <img class="card-img" src="image/Reactdatatable thumbnail picture.png" alt="reactdatatable image"
-                    style="width: 100%; height: auto; max-width: 300px;">
-                <div class="card-body">
-                    <h5 class="card-title">ReactDataTable</h5>
-                    <p class="card-text">Using React,JS,D3.js to display data constructors based on Olympics and its
-                        statistics.</p>
-                    <a href="reactdatatable/react.html" class="btn btn-outline-dark btn-sm">See more</a>
-                </div>
-            </div>
-        </section>
-        <section id="about" class="section-container">
-            <div class="row">
-                <div class="col-md-6 d-flex flex-column justify-content-center">
-                    <h1>I am Uskuu</h1>
-                    <p class="lead">3rd year Game development student at Boise State. I love creating interactable
-                        environments, animations and characters. My favorite project I am working on right now is an
-                        open-world survival game based in medieval Mongolia.</p>
-                    <div class="d-flex justify-content-start">
-                        <button id="contactme" class="btn btn-dark"
-                            onclick="window.location.href='#contactForm';">Contact me</button>
+        <section id="projects" class="project-grid container py-5">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="ratio ratio-16x9">
+                            <video class="embed-responsive-item" src="videos/PiratesvsMonkeys.mp4" controls></video>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Pirates vs Monkeys</h5>
+                            <p class="card-text">Platform puzzle game where you play as a pirate searching for his
+                                bounty stolen by monkeys.</p>
+                            <a href="projects.html" class="btn btn-outline-dark btn-sm">See more</a>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <img src="image/Uusku cropped 1.JPG" alt="Uskuu Batchuluun" class="img-fluid">
+                    <div class="card h-100">
+                        <img class="card-img-top" src="image/thumbnail2.png" alt="UX/UI image">
+                        <div class="card-body">
+                            <h5 class="card-title">UX/UI Mobile App Design Project</h5>
+                            <p class="card-text">Improving an existing app using design principles and creating digital
+                                wireframes based on user feedback.</p>
+                            <a href="projects.html" class="btn btn-outline-dark btn-sm">See more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img class="card-img-top" src="image/Reactdatatable thumbnail picture.png"
+                            alt="ReactDataTable image" style="width: 100%; height: auto;">
+                        <div class="card-body">
+                            <h5 class="card-title">ReactDataTable</h5>
+                            <p class="card-text">Using React, JS, and D3.js to display data constructors based on
+                                Olympics statistics.</p>
+                            <a href="projects.html" class="btn btn-outline-dark btn-sm">See more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about" class="section-container py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 mb-4 mb-lg-0">
+                        <h1>I am Uskuu</h1>
+                        <p class="lead">3rd year Game Development student at Boise State. I love creating interactive
+                            environments, animations, and characters.</p>
+                        <div class="mt-3">
+                            <button id="contactme" class="btn btn-dark"
+                                onclick="window.location.href='#contactForm';">Contact me</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 text-center">
+                        <img src="image/Uusku cropped 1.JPG" alt="Uskuu Batchuluun" class="img-fluid rounded">
+                    </div>
                 </div>
             </div>
         </section>
         <section id="resume" class="section-container">
             <div class="container">
-                <div class="row">
-                    <div class="col-md-6 d-flex flex-column justify-content-center">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
                         <p class="lead">Check out my resume or download it!</p>
                     </div>
-                    <div>
+                    <div class="col-lg-6 text-lg-end text-center">
                         <button id="downloadButton" class="btn btn-dark" onclick="confirmDownload()">Download
                             File</button>
                     </div>
                 </div>
-            </div>
-            <div class="resume-container">
-                <iframe src="image/usukhchuluun batchuluun resume rework.pdf" width="100%" height="900px"></iframe>
+                <div class="row mt-4">
+                    <div class="col-12">
+                        <div class="resume-container">
+                            <iframe src="image/usukhchuluun batchuluun resume rework.pdf" width="100%" height="900px"
+                                style="border: none;"></iframe>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
-        <div class="col-md-12 d-flex flex-column justify-content-center" id="contact">
-            <h1>Contact Me</h1>
-            <form id="contactForm" action="https://formspree.io/f/mqaqzwjb" method="POST">
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" name="email" placeholder="please enter your email" required>
-                    <span class="error-message" id="emailError"></span>
+        <hr>
+        <section id="contact" class="section-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h1>Contact Me</h1>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" placeholder="please enter your Message" rows="5"
-                        required></textarea>
-                    <span class="error-message" id="messageError"></span>
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <form id="contactForm" action="https://formspree.io/f/mqaqzwjb" method="POST">
+                            <div class="form-group mb-3">
+                                <label for="email">Email</label>
+                                <input type="email" name="email" class="form-control"
+                                    placeholder="Please enter your email" required>
+                                <span class="error-message" id="emailError"></span>
+                            </div>
+                            <div class="form-group mb-3">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" class="form-control"
+                                    placeholder="Please enter your message" rows="5" required></textarea>
+                                <span class="error-message" id="messageError"></span>
+                            </div>
+                            <div class="text-center">
+                                <button id="submit" class="btn btn-dark">Submit</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
-                <button id="submit" class="btn btn-dark">Submit</button>
-            </form>
-        </div>
+            </div>
+        </section>
     </main>
     <footer>
         <p class="footer">&copy; 2025 <a>Uskuu Batchuluun</a>. All rights reserved.
