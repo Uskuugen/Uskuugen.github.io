@@ -313,5 +313,99 @@ html {
     overflow:hidden; /* Ensures content doesn't overflow */
 }
 
+/* General styles for the jumbotron */
+.jumbotron.jumbotron-fluid {
+    background-color: #f8f9fa; /* Light background */
+    padding: 2rem 1rem;
+    margin-bottom: 0;
+}
+
+/* Styling for the project cards */
+.card-img-top {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.card {
+    height: 500px; /* Fixed height for cards */
+    overflow: hidden;
+}
+
+.card-body {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* Styling for embedded videos */
+.embed-responsive {
+    overflow: hidden;
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+}
+
+.embed-responsive-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Styling for the resume iframe */
+.resume-container iframe {
+    width: 100%;
+    height: 500px;
+    border: none;
+}
+
+/* Styling for the footer */
+.footer {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+.social-links a {
+    margin: 0 10px;
+    color: #6c757d;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: #343a40;
+}
+
+/* Styling for the contact form */
+#contactForm .form-control {
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+}
+
+#contactForm .btn {
+    margin-top: 1rem;
+    background-color: #343a40;
+    color: #fff;
+}
+
+#contactForm .btn:hover {
+    background-color: #495057;
+}
+
+/* Styling for the download button */
+#downloadButton {
+    background-color: #343a40;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+#downloadButton:hover {
+    background-color: #495057;
+}
+
 
 
