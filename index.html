@@ -190,10 +190,15 @@
     <footer>
         <p class="footer">&copy; 2025 <a>Uskuu Batchuluun</a>. All rights reserved.
         <div class="social-links">
-            <a href="https://github.com/Uskuugen" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/uusku-batchuluun-6772782b4/" target="_blank"><i
-                    class="fab fa-linkedin"></i></a>
-            <a href="mailto:usukhchuluun@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+            <a href="https://github.com/Uskuugen" target="_blank" title="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/uusku-batchuluun-6772782b4/" target="_blank" title="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="mailto:usukhchuluun@gmail.com" title="Email Me">
+                <i class="fas fa-envelope"></i>
+            </a>
         </div>
         </p>
     </footer>
@@ -204,72 +209,72 @@
                 window.location.href = "https://drive.google.com/uc?export=download&id=1nbkqkfUoI82FkSBmvCxyIkNziU--csAi";
             }
         }
-        
+
     </script>
     <script>
         document.addEventListener("DOMContentLoaded", () => {
-    const form = document.getElementById('contactForm');
-    const status = document.getElementById('form-status');
+            const form = document.getElementById('contactForm');
+            const status = document.getElementById('form-status');
 
-    if (!form) return;
+            if (!form) return;
 
-    form.addEventListener('submit', async function (event) {
-        event.preventDefault();
+            form.addEventListener('submit', async function (event) {
+                event.preventDefault();
 
-        // Clear errors
-        document.querySelectorAll('.error-message').forEach(el => {
-            el.style.display = 'none';
-        });
+                // Clear errors
+                document.querySelectorAll('.error-message').forEach(el => {
+                    el.style.display = 'none';
+                });
 
-        const email = document.getElementById('email').value.trim();
-        const message = document.getElementById('message').value.trim();
+                const email = document.getElementById('email').value.trim();
+                const message = document.getElementById('message').value.trim();
 
-        let isValid = true;
+                let isValid = true;
 
-        // Email validation
-        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (!email || !emailPattern.test(email)) {
-            const err = document.getElementById('emailError');
-            err.textContent = 'Valid email is required';
-            err.style.display = 'block';
-            isValid = false;
-        }
+                // Email validation
+                const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!email || !emailPattern.test(email)) {
+                    const err = document.getElementById('emailError');
+                    err.textContent = 'Valid email is required';
+                    err.style.display = 'block';
+                    isValid = false;
+                }
 
-        // Message validation
-        if (!message) {
-            const err = document.getElementById('messageError');
-            err.textContent = 'Message is required';
-            err.style.display = 'block';
-            isValid = false;
-        }
+                // Message validation
+                if (!message) {
+                    const err = document.getElementById('messageError');
+                    err.textContent = 'Message is required';
+                    err.style.display = 'block';
+                    isValid = false;
+                }
 
-        if (!isValid) return;
+                if (!isValid) return;
 
-        // 🔥 Send to Formspree
-        const data = new FormData(form);
+                // 🔥 Send to Formspree
+                const data = new FormData(form);
 
-        try {
-            const response = await fetch(form.action, {
-                method: form.method,
-                body: data,
-                headers: {
-                    'Accept': 'application/json'
+                try {
+                    const response = await fetch(form.action, {
+                        method: form.method,
+                        body: data,
+                        headers: {
+                            'Accept': 'application/json'
+                        }
+                    });
+
+                    if (response.ok) {
+                        status.textContent = "✅ Message sent!";
+                        form.reset();
+                    } else {
+                        status.textContent = "❌ Something went wrong.";
+                    }
+                } catch (error) {
+                    status.textContent = "❌ Network error.";
                 }
             });
-
-            if (response.ok) {
-                status.textContent = "✅ Message sent!";
-                form.reset();
-            } else {
-                status.textContent = "❌ Something went wrong.";
-            }
-        } catch (error) {
-            status.textContent = "❌ Network error.";
-        }
-    });
-});
+        });
     </script>
-    
+
     <!-- <script>
         var form = document.getElementById("my-form");
         async function handleSubmit(event) {

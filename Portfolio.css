@@ -27,6 +27,7 @@ main {
   margin: 2rem auto;
   padding: 0 1rem;
 }
+
 #about {
   margin: 0;
   padding: 0;
@@ -35,30 +36,44 @@ main {
 
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid layout */
-  gap: 2rem; /* Increase the space between grid items */
-  padding: 2rem; /* Add padding around the grid */
-  max-height: 100%; /* Ensure the grid does not exceed the container height */
-  overflow: hidden; /* Prevent scrollbars */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  /* Responsive grid layout */
+  gap: 2rem;
+  /* Increase the space between grid items */
+  padding: 2rem;
+  /* Add padding around the grid */
+  max-height: 100%;
+  /* Ensure the grid does not exceed the container height */
+  overflow: hidden;
+  /* Prevent scrollbars */
 }
 
 .project-grid .card {
-  height: auto; /* Allow cards to adjust height automatically */
-  max-height: 400px; /* Optional: Limit the maximum height of cards */
-  overflow: hidden; /* Hide any overflowing content */
+  height: auto;
+  /* Allow cards to adjust height automatically */
+  max-height: 400px;
+  /* Optional: Limit the maximum height of cards */
+  overflow: hidden;
+  /* Hide any overflowing content */
 }
 
 .project-grid .card img,
 .project-grid .card iframe {
-  width: 100%; /* Ensure images and iframes fit within the card */
-  height: auto; /* Maintain aspect ratio */
-  object-fit: cover; /* Crop images to fit the card */
+  width: 100%;
+  /* Ensure images and iframes fit within the card */
+  height: auto;
+  /* Maintain aspect ratio */
+  object-fit: cover;
+  /* Crop images to fit the card */
 }
 
 .project-grid .card-body {
-  overflow: hidden; /* Prevent scrollbars in the card body */
-  text-overflow: ellipsis; /* Truncate overflowing text */
-  white-space: nowrap; /* Prevent text wrapping */
+  overflow: hidden;
+  /* Prevent scrollbars in the card body */
+  text-overflow: ellipsis;
+  /* Truncate overflowing text */
+  white-space: nowrap;
+  /* Prevent text wrapping */
 }
 
 .project {
@@ -105,7 +120,7 @@ main {
   margin-top: 1rem;
 }
 
-.contact-form-container{
+.contact-form-container {
   max-width: 600px;
   margin: 0 auto;
   padding: 2rem;
@@ -122,6 +137,7 @@ main {
   color: red;
   font-size: 0.9rem;
 }
+
 .submit-button {
   background-color: #007bff;
   color: white;
@@ -130,6 +146,7 @@ main {
   border-radius: 4px;
   cursor: pointer;
 }
+
 .submit-button:hover {
   background-color: #0056b3;
 }
@@ -141,7 +158,8 @@ label {
   color: #333;
 }
 
-input, textarea {
+input,
+textarea {
   width: 100%;
   padding: 0.8rem;
   border: 1px solid #ddd;
@@ -172,9 +190,10 @@ body,
 html {
   height: 100%;
 }
+
 .project {
   box-shadow: none;
-  
+
 }
 
 /* The hero image */
@@ -268,144 +287,177 @@ html {
     max-width: 100%;
   }
 }
+
 @media (max-width: 768px) {
   .hero-image {
-      height: 60vh;
-      min-height: 300px;
+    height: 60vh;
+    min-height: 300px;
   }
 }
+
 @media (max-width: 768px) {
   .navbar-nav {
-      text-align: center;
+    text-align: center;
   }
+
   .navbar-brand {
-      font-size: 18px;
+    font-size: 18px;
   }
-  .navbar-collapse{
-      justify-content: center;
+
+  .navbar-collapse {
+    justify-content: center;
   }
 }
+
 @media (max-width: 768px) {
   .resume-container {
-      max-width: 90%; /* Reduces width on small screens */
-      padding: 10px;
+    max-width: 90%;
+    /* Reduces width on small screens */
+    padding: 10px;
   }
 }
+
 @media (max-width: 600px) {
   .hero-text h1 {
-      font-size: 30px;
+    font-size: 30px;
   }
+
   .hero-text p {
-      font-size: 16px;
+    font-size: 16px;
   }
 }
+
 @media (max-width: 600px) {
   .project-grid {
-      grid-template-columns: 1fr; /* Ensures single column layout */
+    grid-template-columns: 1fr;
+    /* Ensures single column layout */
   }
 }
-.projet-grid .card-body{
+
+.projet-grid .card-body {
   max-height: 500px;
 }
 
 .project-grid .card {
-    max-height: 500px; /* Adjust the height as needed */
-    overflow:hidden; /* Ensures content doesn't overflow */
+  max-height: 500px;
+  /* Adjust the height as needed */
+  overflow: hidden;
+  /* Ensures content doesn't overflow */
 }
 
 /* General styles for the jumbotron */
 .jumbotron.jumbotron-fluid {
-    background-color: #f8f9fa; /* Light background */
-    padding: 2rem 1rem;
-    margin-bottom: 0;
+  background-color: #f8f9fa;
+  /* Light background */
+  padding: 2rem 1rem;
+  margin-bottom: 0;
 }
 
 /* Styling for the project cards */
 .card-img-top {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 .card {
-    height: 500px; /* Fixed height for cards */
-    overflow: hidden;
+  height: 500px;
+  /* Fixed height for cards */
+  overflow: hidden;
 }
 
 .card-body {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 /* Styling for embedded videos */
 .embed-responsive {
-    overflow: hidden;
-    height: 0;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  overflow: hidden;
+  height: 0;
+  padding-bottom: 56.25%;
+  /* 16:9 aspect ratio */
 }
 
 .embed-responsive-item {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /* Styling for the resume iframe */
 .resume-container iframe {
-    width: 100%;
-    height: 500px;
-    border: none;
+  width: 100%;
+  height: 500px;
+  border: none;
 }
 
 /* Styling for the footer */
 .footer {
-    text-align: center;
-    margin-top: 2rem;
-    font-size: 0.9rem;
-    color: #6c757d;
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+.social-links {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
 }
 
 .social-links a {
-    margin: 0 10px;
-    color: #6c757d;
-    text-decoration: none;
+  font-size: 28px;
+  color: #aaa;
+  transition: all 0.3s ease;
+  position: relative;
 }
 
 .social-links a:hover {
-    color: #343a40;
+  color: #fff;
+  transform: translateY(-5px) scale(1.1);
+}
+
+/* Optional glow effect */
+.social-links a:hover::after {
+  content: '';
+  position: absolute;
+  inset: -5px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  z-index: -1;
+  filter: blur(10px);
 }
 
 /* Styling for the contact form */
 #contactForm .form-control {
-    border-radius: 5px;
-    border: 1px solid #ced4da;
+  border-radius: 5px;
+  border: 1px solid #ced4da;
 }
 
 #contactForm .btn {
-    margin-top: 1rem;
-    background-color: #343a40;
-    color: #fff;
+  margin-top: 1rem;
+  background-color: #343a40;
+  color: #fff;
 }
 
 #contactForm .btn:hover {
-    background-color: #495057;
+  background-color: #495057;
 }
 
 /* Styling for the download button */
 #downloadButton {
-    background-color: #343a40;
-    color: #fff;
-    border: none;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
+  background-color: #343a40;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
 }
 
 #downloadButton:hover {
-    background-color: #495057;
+  background-color: #495057;
 }
-
-
-
