@@ -1,16 +1,21 @@
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
-  padding: 0;
-  background-color: #f4f4f4;
-  color: #333;
+  padding-top: 100px;
+  color: #f5f5f5;
+  background-color: #0d0d0d;
+  background-image: linear-gradient(rgba(0, 0, 0, .75), rgba(0, 0, 0, .75)),
+    url("Shoshone falls picture.JPG");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 header {
-  background-color: #282c34;
-  color: #fff;
-  padding: 1rem 2rem;
-  text-align: center;
+  background: #000;
+  color: white;
+  border-bottom: 3px solid #ff7a00;
 }
 
 header h1 {
@@ -23,14 +28,102 @@ header p {
 }
 
 main {
-  max-width: 1200px;
-  margin: 2rem auto;
-  padding: 0 1rem;
+  max-width: 1300px;
+  margin: 90px auto 40px;
+  padding: 0 20px;
 }
 
 #about {
   margin: 0;
   padding: 0;
+  width: 100%;
+}
+
+.card {
+  background: #181818 !important;
+  border: 1px solid #303030;
+  border-radius: 12px;
+  color: white;
+  overflow: hidden;
+  transition: .3s ease;
+  height: 100%;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  border-color: #ff7a00;
+  box-shadow: 0 12px 35px rgba(255, 122, 0, .25);
+}
+
+.card-title {
+  color: #ff7a00;
+}
+
+.card-text {
+  color: #c7c7c7;
+  white-space: normal;
+}
+
+.card-img-top {
+  object-fit: cover;
+}
+
+.floating-nav {
+
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: min(92%, 1200px);
+  width: fit-content;
+  min-width: 700px;
+
+  background: rgba(20, 20, 20, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  border: 1px solid rgba(255, 122, 0, 0.35);
+  border-radius: 18px;
+
+  padding: 10px 20px;
+
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+
+  z-index: 1000;
+}
+
+.navbar-brand {
+  color: #fff !important;
+  font-weight: 700;
+}
+
+.nav-link {
+  color: #ddd !important;
+  margin-left: 20px;
+  position: relative;
+  transition: .25s;
+}
+
+.nav-link:hover {
+  color: #ff7a00 !important;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+
+  width: 0;
+  height: 2px;
+
+  background: #ff7a00;
+  transition: .3s;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
   width: 100%;
 }
 
@@ -46,34 +139,6 @@ main {
   /* Ensure the grid does not exceed the container height */
   overflow: hidden;
   /* Prevent scrollbars */
-}
-
-.project-grid .card {
-  height: auto;
-  /* Allow cards to adjust height automatically */
-  max-height: 400px;
-  /* Optional: Limit the maximum height of cards */
-  overflow: hidden;
-  /* Hide any overflowing content */
-}
-
-.project-grid .card img,
-.project-grid .card iframe {
-  width: 100%;
-  /* Ensure images and iframes fit within the card */
-  height: auto;
-  /* Maintain aspect ratio */
-  object-fit: cover;
-  /* Crop images to fit the card */
-}
-
-.project-grid .card-body {
-  overflow: hidden;
-  /* Prevent scrollbars in the card body */
-  text-overflow: ellipsis;
-  /* Truncate overflowing text */
-  white-space: nowrap;
-  /* Prevent text wrapping */
 }
 
 .project {
@@ -128,6 +193,7 @@ main {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
 
 .form-group {
   margin-bottom: 1rem;
@@ -186,7 +252,6 @@ footer a {
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-body,
 html {
   height: 100%;
 }
@@ -334,43 +399,21 @@ html {
   }
 }
 
-.projet-grid .card-body {
-  max-height: 500px;
+.jumbotron {
+  background: transparent;
+  color: white;
+  padding: 40px 0;
 }
 
-.project-grid .card {
-  max-height: 500px;
-  /* Adjust the height as needed */
-  overflow: hidden;
-  /* Ensures content doesn't overflow */
+.display-2 {
+  color: #ff7a00;
+  font-weight: bold;
 }
 
-/* General styles for the jumbotron */
-.jumbotron.jumbotron-fluid {
-  background-color: #f8f9fa;
-  /* Light background */
-  padding: 2rem 1rem;
-  margin-bottom: 0;
+.lead {
+  color: #cccccc;
 }
 
-/* Styling for the project cards */
-.card-img-top {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-
-.card {
-  height: 500px;
-  /* Fixed height for cards */
-  overflow: hidden;
-}
-
-.card-body {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
 
 /* Styling for embedded videos */
 .embed-responsive {
@@ -397,10 +440,12 @@ html {
 
 /* Styling for the footer */
 .footer {
-  text-align: center;
-  margin-top: 2rem;
-  font-size: 0.9rem;
-  color: #6c757d;
+  footer {
+    background: #000;
+    color: white;
+    border-top: 2px solid #ff7a00;
+    padding: 30px;
+  }
 }
 
 .social-links {
