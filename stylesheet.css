@@ -1,0 +1,93 @@
+:root{
+    /* Colors */
+    --bg:#0d0d0d;
+    --surface:#181818;
+    --surface-light:#222;
+
+    --primary:#ff7a00;
+    --primary-hover:#ff9a33;
+
+    --text:#fff;
+    --text-secondary:#c7c7c7;
+
+    --border:#333;
+
+    /* Radius */
+
+    --radius-sm:8px;
+    --radius:12px;
+    --radius-lg:20px;
+
+    /* Shadows */
+
+    --shadow-sm:0 6px 18px rgba(0,0,0,.2);
+    --shadow:0 12px 35px rgba(0,0,0,.35);
+
+    /* Width */
+
+    --max-width:1300px;
+}
+*,
+*::before,
+*::after{
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    margin:0;
+    padding-top:100px;
+
+    font-family:"Roboto",sans-serif;
+
+    background:
+        linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)),
+        url("Shoshone falls picture.JPG");
+
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+
+    color:var(--text);
+}
+h1{
+    font-size:3.5rem;
+    font-weight:700;
+    line-height:1.1;
+}
+
+h2{
+    font-size:2.5rem;
+    font-weight:700;
+}
+
+h3{
+    font-size:1.5rem;
+    font-weight:700;
+}
+
+p{
+    font-size:1rem;
+    line-height:1.8;
+    color:var(--text-secondary);
+}
+
+.lead{
+    font-size:1.25rem;
+}
+main{
+    max-width:var(--max-width);
+    margin:auto;
+    padding:0 20px;
+}
+
+section{
+    padding:6rem 0;
+}
+
+.container{
+    max-width:1200px;
+}

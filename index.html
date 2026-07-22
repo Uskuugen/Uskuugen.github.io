@@ -67,32 +67,141 @@
     </nav>
 
     <main>
+        <!-- My picture and story positon and stuff-->
         <section id="about" class="section-container py-5">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-lg-6 mb-4 mb-lg-0">
+
+                    <!-- Image -->
+                    <div class="col-lg-4 text-center mb-4 mb-lg-0">
+                        <img src="image/Uusku cropped 1.JPG" alt="Uskuu Batchuluun" class="about-img">
+                    </div>
+
+                    <!-- Text -->
+                    <div class="col-lg-8">
                         <h1>I am Uskuu</h1>
-                        <p class="lead">3rd year Game Development student at Boise State. I love creating interactive
-                            environments, animations, and characters.</p>
-                        <div class="mt-3">
-                            <button id="contactme" class="btn btn-dark"
-                                onclick="window.location.href='#contactForm';">Contact me</button>
-                        </div>
+
+                        <p class="lead">
+                            Aspiring back-end immersive development student. Game development student and art minor.
+                        </p>
+
+                        <button id="contactme" class="btn btn-dark mt-3" onclick="window.location.href='#contactForm';">
+                            Contact Me
+                        </button>
                     </div>
-                    <div class="col-lg-6 text-center">
-                        <img src="image/Uusku cropped 1.JPG" alt="Uskuu Batchuluun" class="img-fluid rounded">
-                    </div>
+
                 </div>
             </div>
         </section>
         <hr>
-        <section id="projects-intro" class="section-container text-center py-4">
-            <div class="container">
-                <h2 class="mb-3">My Projects</h2>
+
+        <section id="project">
+            <!-- Project 1 -->
+            <div class="project-showcase">
+                <div class="project-content">
+                    <p class="project-number">01</p>
+                    <h1 class="project-heading">HoopRun</h1>
+                    <p class="project-subheading">Full-Stack Web Application</p>
+
+                    <p class="project-description">
+                        A full-stack application for creating and joining pickup basketball games,
+                        built with Node.js, Express, MongoDB, and JavaScript.
+                    </p>
+
+                    <div class="project-tech">
+                        <span class="node">Node.js</span>
+                        <span class="express">Express</span>
+                        <span class="mongodb">MongoDB</span>
+                        <span class="javascript">JavaScript</span>
+                    </div>
+
+                    <div class="project-links">
+                        <a href="https://github.com/Uskuugen/Pickup" target="_blank" rel="noopener">GitHub ↗</a>
+                        <a href="projects.html">View Project →</a>
+                    </div>
+                </div>
+
+                <div class="project-image-wrapper">
+                    <img src="pickup.png" alt="HoopRun Screenshot" class="project-showcase-image">
+                </div>
+            </div>
+
+            <hr class="project-divider">
+
+            <!-- Project 2 -->
+            <div class="project-showcase reverse">
+                <div class="project-content">
+                    <p class="project-number">02</p>
+                    <h1 class="project-heading">ReactDataTable</h1>
+                    <p class="project-subheading">Interactive Data Visualization</p>
+
+                    <p class="project-description">
+                        A React and D3.js application for exploring Olympic statistics through
+                        interactive data visualizations.
+                    </p>
+
+                    <div class="project-tech">
+                        <span class="react">React</span>
+                        <span class="d3">D3.js</span>
+                        <span class="javascript">JavaScript</span>
+                    </div>
+
+                    <div class="project-links">
+                        <a href="projects.html">View Project →</a>
+                    </div>
+                </div>
+
+                <div class="project-image-wrapper">
+                    <img src="image/Reactdatatable thumbnail picture.png" alt="ReactDataTable Screenshot"
+                        class="project-showcase-image">
+                </div>
+            </div>
+
+            <hr class="project-divider">
+
+            <!-- Project 3 -->
+            <div class="project-showcase">
+                <div class="project-content">
+                    <p class="project-number">03</p>
+                    <h1 class="project-heading">ESPN Mock redesign</h1>
+                    <p class="project-subheading">UX/UI Mobile App Design Project</p>
+
+                    <p class="project-description">
+                        A full-stack application for creating and joining pickup basketball games,
+                        built with Node.js, Express, MongoDB, and JavaScript.
+                    </p>
+
+                    <div class="project-tech">
+                        <span class="node">Node.js</span>
+                        <span class="express">Express</span>
+                        <span class="mongodb">MongoDB</span>
+                        <span class="javascript">JavaScript</span>
+                    </div>
+
+                    <div class="project-links">
+                        <a href="https://github.com/Uskuugen/Pickup" target="_blank" rel="noopener">GitHub ↗</a>
+                        <a href="projects.html">View Project →</a>
+                    </div>
+                </div>
+
+                <div class="project-image-wrapper">
+                    <img src="thumbnail2.png" alt="UX Screenshot" class="project-showcase-image">
+                </div>
             </div>
         </section>
-        <section id="projects" class="project-grid container py-5">
+
+            <!-- <section id="projects" class="project-grid container py-5">
             <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img class="card-img-top" src="pickup.png" alt="UX/UI image">
+                        <div class="card-body">
+                            <h5 class="card-title">HoopRun | Full-Stack Pickup Basketball App</h5>
+                            <p class="card-text">A full-stack application for creating and joining pickup basketball games, built with Node.js, Express, MongoDB, and JavaScript.</p>
+                            <a href="projects.html" class="btn btn-outline-dark btn-sm">See more</a>
+                        </div>
+                    </div>
+                </div>
                 <div class="col-md-4">
                     <div class="card h-100">
                         <div class="ratio ratio-16x9">
@@ -131,39 +240,39 @@
                 </div>
             </div>
         </section>
-
-        <section id="resume" class="section-container">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-6">
-                        <p class="lead">Check out my resume or download it!</p>
+    -->
+            <section id="resume" class="section-container">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <p class="lead">Check out my resume or download it!</p>
+                        </div>
+                        <div class="col-lg-6 text-lg-end text-center">
+                            <button id="downloadButton" class="btn btn-dark" onclick="confirmDownload()">Download
+                                File</button>
+                        </div>
                     </div>
-                    <div class="col-lg-6 text-lg-end text-center">
-                        <button id="downloadButton" class="btn btn-dark" onclick="confirmDownload()">Download
-                            File</button>
-                    </div>
-                </div>
-                <div class="row mt-4">
-                    <div class="col-12">
-                        <div class="resume-container">
-                            <iframe src="image/usukhchuluun batchuluun resume rework.pdf" width="100%" height="900px"
-                                title="Resume"></iframe>
+                    <div class="row mt-4">
+                        <div class="col-12">
+                            <div class="resume-container">
+                                <iframe src="image/usukhchuluun batchuluun resume rework.pdf" width="100%"
+                                    height="900px" title="Resume"></iframe>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <hr>
-        <section id="contact" class="section-container">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 text-center">
-                        <h1>Contact Me</h1>
+            </section>
+            <hr>
+            <section id="contact" class="section-container">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <h1>Contact Me</h1>
+                        </div>
                     </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-md-8">
-                        <!--<form id="contactForm" action="https://formspree.io/f/mqaqzwjb" method="POST">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8">
+                            <!--<form id="contactForm" action="https://formspree.io/f/mqaqzwjb" method="POST">
                             <div class="form-group mb-3">
                                 <label for="email">Email</label>
                                 <input type="email" name="email" class="form-control"
@@ -180,127 +289,128 @@
                                 <button id="submit" class="btn btn-dark">Submit</button>
                             </div>
                         </form>-->
-                        <form id="contactForm" action="https://formspree.io/f/mqaqzwjb" method="POST">
+                            <form id="contactForm" action="https://formspree.io/f/mqaqzwjb" method="POST">
 
-                            <div class="form-group mb-3">
-                                <label for="email">Email</label>
-                                <input type="email" id="email" name="email" class="form-control"
-                                    placeholder="Please enter your email" required>
-                                <span class="error-message" id="emailError"></span>
-                            </div>
+                                <div class="form-group mb-3">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email" class="form-control"
+                                        placeholder="Please enter your email" required>
+                                    <span class="error-message" id="emailError"></span>
+                                </div>
 
-                            <div class="form-group mb-3">
-                                <label for="message">Message</label>
-                                <textarea id="message" name="message" class="form-control"
-                                    placeholder="Please enter your message" rows="5" required></textarea>
-                                <span class="error-message" id="messageError"></span>
-                            </div>
+                                <div class="form-group mb-3">
+                                    <label for="message">Message</label>
+                                    <textarea id="message" name="message" class="form-control"
+                                        placeholder="Please enter your message" rows="5" required></textarea>
+                                    <span class="error-message" id="messageError"></span>
+                                </div>
 
-                            <div class="text-center">
-                                <button type="submit" class="btn btn-dark">Submit</button>
-                            </div>
-                            <!-- ADD THIS -->
-                            <p id="form-status" class="mt-3 text-center"></p>
-                        </form>
+                                <div class="text-center">
+                                    <button type="submit" class="btn btn-dark">Submit</button>
+                                </div>
+                                <!-- ADD THIS -->
+                                <p id="form-status" class="mt-3 text-center"></p>
+                            </form>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <footer>
-            <p class="footer">&copy; 2025 <a>Uskuu Batchuluun</a>. All rights reserved.
-            <div class="social-links">
-                <a href="https://github.com/Uskuugen" target="_blank" rel="noopener noreferrer" title="GitHub">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/uusku-batchuluun-6772782b4/" target="_blank"
-                    rel="noopener noreferrer" title="LinkedIn">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="mailto:usukhchuluun@gmail.com" title="Email Me">
-                    <i class="fas fa-envelope"></i>
-                </a>
-            </div>
-            </p>
-        </footer>
-        <script>
-            function confirmDownload() {
-                const userConfirmed = confirm("Are you sure you want to download this file?");
-                if (userConfirmed) {
-                    window.location.href = "https://drive.google.com/uc?export=download&id=1nbkqkfUoI82FkSBmvCxyIkNziU--csAi";
+            </section>
+            <!-- Commenting out the footer for later use-->
+            <!--<footer>
+                <p class="footer">&copy; 2025 <a>Uskuu Batchuluun</a>. All rights reserved.
+                <div class="social-links">
+                    <a href="https://github.com/Uskuugen" target="_blank" rel="noopener noreferrer" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/uusku-batchuluun-6772782b4/" target="_blank"
+                        rel="noopener noreferrer" title="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:usukhchuluun@gmail.com" title="Email Me">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+                </p>
+            </footer>-->
+            <script>
+                function confirmDownload() {
+                    const userConfirmed = confirm("Are you sure you want to download this file?");
+                    if (userConfirmed) {
+                        window.location.href = "https://drive.google.com/uc?export=download&id=1nbkqkfUoI82FkSBmvCxyIkNziU--csAi";
+                    }
                 }
-            }
-        </script>
-        <script>
+            </script>
+            <script>
 
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener("click", function (e) {
-                    e.preventDefault();
-                    document.querySelector(this.getAttribute("href"))
-                        .scrollIntoView({ behavior: "smooth" });
-                });
-            });
-            document.addEventListener("DOMContentLoaded", () => {
-                const form = document.getElementById('contactForm');
-                const status = document.getElementById('form-status');
-
-                if (!form) return;
-
-                form.addEventListener('submit', async function (event) {
-                    event.preventDefault();
-
-                    // Clear errors
-                    document.querySelectorAll('.error-message').forEach(el => {
-                        el.style.display = 'none';
+                document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                    anchor.addEventListener("click", function (e) {
+                        e.preventDefault();
+                        document.querySelector(this.getAttribute("href"))
+                            .scrollIntoView({ behavior: "smooth" });
                     });
+                });
+                document.addEventListener("DOMContentLoaded", () => {
+                    const form = document.getElementById('contactForm');
+                    const status = document.getElementById('form-status');
 
-                    const email = document.getElementById('email').value.trim();
-                    const message = document.getElementById('message').value.trim();
+                    if (!form) return;
 
-                    let isValid = true;
+                    form.addEventListener('submit', async function (event) {
+                        event.preventDefault();
 
-                    // Email validation
-                    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-                    if (!email || !emailPattern.test(email)) {
-                        const err = document.getElementById('emailError');
-                        err.textContent = 'Valid email is required';
-                        err.style.display = 'block';
-                        isValid = false;
-                    }
-
-                    // Message validation
-                    if (!message) {
-                        const err = document.getElementById('messageError');
-                        err.textContent = 'Message is required';
-                        err.style.display = 'block';
-                        isValid = false;
-                    }
-
-                    if (!isValid) return;
-
-                    // 🔥 Send to Formspree
-                    const data = new FormData(form);
-
-                    try {
-                        const response = await fetch(form.action, {
-                            method: form.method,
-                            body: data,
-                            headers: {
-                                'Accept': 'application/json'
-                            }
+                        // Clear errors
+                        document.querySelectorAll('.error-message').forEach(el => {
+                            el.style.display = 'none';
                         });
 
-                        if (response.ok) {
-                            status.textContent = "✅ Message sent!";
-                            form.reset();
-                        } else {
-                            status.textContent = "❌ Something went wrong.";
+                        const email = document.getElementById('email').value.trim();
+                        const message = document.getElementById('message').value.trim();
+
+                        let isValid = true;
+
+                        // Email validation
+                        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                        if (!email || !emailPattern.test(email)) {
+                            const err = document.getElementById('emailError');
+                            err.textContent = 'Valid email is required';
+                            err.style.display = 'block';
+                            isValid = false;
                         }
-                    } catch (error) {
-                        status.textContent = "❌ Network error.";
-                    }
+
+                        // Message validation
+                        if (!message) {
+                            const err = document.getElementById('messageError');
+                            err.textContent = 'Message is required';
+                            err.style.display = 'block';
+                            isValid = false;
+                        }
+
+                        if (!isValid) return;
+
+                        // 🔥 Send to Formspree
+                        const data = new FormData(form);
+
+                        try {
+                            const response = await fetch(form.action, {
+                                method: form.method,
+                                body: data,
+                                headers: {
+                                    'Accept': 'application/json'
+                                }
+                            });
+
+                            if (response.ok) {
+                                status.textContent = "✅ Message sent!";
+                                form.reset();
+                            } else {
+                                status.textContent = "❌ Something went wrong.";
+                            }
+                        } catch (error) {
+                            status.textContent = "❌ Network error.";
+                        }
+                    });
                 });
-            });
-        </script>
+            </script>
 
     </main>
 </body>
